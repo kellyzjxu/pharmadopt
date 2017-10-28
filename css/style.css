@@ -80,7 +80,7 @@ body {
 }
 
 #welcome h1 {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 70px;
   font-size: 120px;
   letter-spacing: 0.1em;
@@ -88,6 +88,7 @@ body {
 
 #welcome h3 {
   font-size: 30px;
+  font-weight: bold;
 }
 
 /*ABOUT US STYLING*/
@@ -272,4 +273,45 @@ body {
   border-color: #00ffff;
   transition: 500ms ease;
   color: #00ffff;
+}
+
+.button {
+    background-color: black;
+    border: 1px solid white;
+    width: 20%;
+    height: 40px;
+    position: relative;
+    margin-top: 40px;
+
+    text-align: center;
+/*    vertical-align: middle;*/
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    outline: 0;
+    opacity: 0.6;
+}
+
+.button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 0.5;
+  right: 0;
 }
