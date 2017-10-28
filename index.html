@@ -1,10 +1,116 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Boston Hacks</title>
-  <link rel="stylesheet" type="text/css" href="style/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Shiva </title>
+  <!-- Auxilliary Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png">
 </head>
-
 <body>
+  <div class="container-fluid">
+    <div class="header">
+      <img src="images/logo.svg" alt="logo">
+      <div class="nav">
+        <a href="#mission"><p> What We Do </p></a>
+        <a href="#research"><p> Research </p></a>
+        <p> Join Us </p>
+        <p> Contact </p>
+      </div>
+    </div>
+    <div class="body">
+      <div id="welcome">
+        <div id="message">
+          <h1> SHIVA </h1>
+          <div id="atom"></div>
+          <h3> Antimatter Energy Solutions. </h3>
+          <h3> Leading Research and Cutting Edge Technology. </h3>
+          <h3> Join the Revolution Today. </h3>
+        </div>
+      </div>
+      <div id="mission">
+        <div class="contentleft">
+          <img src="images/logoblue.png" alt="logo">
+          <h1> WHAT WE DO </h1>
+          <p> We research and design the future of energy.
+            Current nuclear fission and even fusion only release a fraction
+            of the potential energy stored in the energy-release reactions.
+            Anti-matter annihilation releases 100%. We strive to harness that
+            power to provided potentially unlimited energy.
+          </p>
+        </div>
+        <img id="collision" src="images/collision.jpg" alt="collision">
+      </div>
+      <div id="research">
+        <div class="contentright">
+          <img src="images/logoblue.png" alt="logo">
+          <h1> OUR RESEARCH </h1>
+          <p> Our research facilities are currently on track to create the world's first
+            major anti-matter containment cell, capable of holding up to 0.5g of anti-matter,
+            which can power half of Manhattan. We are also developing a revolutionary anti-matter
+            production method, capable of producing 5x as much antiihydrogen as the current leading
+            production method.
+          </p>
+        </div>
+        <img id="diagram" src="images/research.jpg" alt="diagram">
+      </div>
+      <div id="primer">
+        <h1> ANTIMATTER PRIMER </h1>
+        <iframe src="https://www.youtube.com/embed/3a1c_1TIGGw" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div id="contact">
+        <h1> STAY UPDATED. JOIN OUR MAILING LIST! </h1>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="mailinglist" placeholder="name@example.com">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="nav" id="foot">
+        <a href="#mission"><p> What We Do </p></a>
+        <a href="#research"><p> Research </p></a>
+        <p> Join Us </p>
+        <p> Contact </p>
+      </div>
+      <div id="social-media">
+        <a href="https://www.facebook.com/derrydchen" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/dchen0822" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://github.com/derry0822" target="_blank" class="fa fa-github"></a>
+      </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="js/bodymovin.js" type="text/javascript"></script>
+  <script src="js/smooth-scroll.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script>
+	   var scroll = new SmoothScroll('a[href*="#"]', {
+       speed: 1000,
+       offset: 0
+     });
+  </script>
+  <!-- <script>
+    var container = document.getElementById('atom');
+    var animData = {
+        container: container,
+        renderer: 'svg',
+        autoplay: true,
+        loop: true,
+        path : 'data.json'
+    };
+    var anim = bodymovin.loadAnimation(animData);
+  </script> -->
+</body>
+</html>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 350 350">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 5px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 86.806px;
+        font-family: "Poiret One";
+      }
+
+      .cls-4 {
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="174.75" cy="147.375" r="100"/>
+  <circle class="cls-2" cx="174.5" cy="147.5" r="37.5"/>
+  <text id="SHIVA_" data-name="SHIVA " class="cls-3" x="61" y="326">SHIVA</text>
+  <circle class="cls-4" cx="174.5" cy="47.5" r="17.5"/>
+</svg>
