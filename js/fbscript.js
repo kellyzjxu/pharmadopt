@@ -46,6 +46,16 @@
             setElements(false);
         });
     }
+    function fireClickEvent(element) {
+        var evt = new window.MouseEvent('click', {
+            view: window,
+            bubbles: true,
+            cancelable: true
+        });
+
+        element.dispatchEvent(evt);
+    }
+
 
     function checkLoginState() {
         FB.getLoginStatus(function(response) {
