@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title> pharmABdopt </title>
-  <!-- Auxilliary Stylesheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> pharmABdopt </title>
+    <!-- Auxilliary Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png">
+    <script src="js/fbscript.js"></script>
 </head>
+
 <body>
-  <div class="container-fluid">
-    <div class="header">
-      <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-      <div class="nav">
-        <a href="index.html#mission"><p> What We Do </p></a>
-        <a href="index.html#ourtech"><p> Technology </p></a>
-        <a href="index.html#primer"><p> Orphan Drugs </p></a>
-        <a href="index.html#contact"><p> Contact </p></a>
-      </div>
-    </div>
-    <div class="body">
-      <div id="welcome">
-        <div id="message">
-          <h3 style="margin-top: 50px;"> Connect to Facebook </h3>
-          <div id="atom"></div>
-          <h3> & Get Connected to an Orphan Drug </h3>
-	        <!-- INSERT FACEBOOK LOGIN -->
+    <div class="container-fluid">
+        <div class="header">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav">
+                <a href="index.html#mission">
+                    <p> What We Do </p>
+                </a>
+                <a href="index.html#ourtech">
+                    <p> Technology </p>
+                </a>
+                <a href="index.html#primer">
+                    <p> Orphan Drugs </p>
+                </a>
+                <a href="index.html#contact">
+                    <p> Contact </p>
+                </a>
+            </div>
         </div>
-      </div>
+        <div class="body">
+            <div id="welcome">
+                <div id="message">
+                    <h3 style="margin-top: 50px;"> Connect to Facebook </h3>
+                    <div id="atom"></div>
+                    <h3> & Get Connected to an Orphan Drug </h3>
+                    <fb:login-button id="fb-btn" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+                    <a href="#" onclick="logout()" id="fb-logout">Logout</a>
+                    <!-- INSERT FACEBOOK LOGIN -->
+                </div>
+            </div>
+        </div>
     </div>
-  </div>  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <script src="js/bodymovin.js" type="text/javascript"></script>
-  <script src="js/smooth-scroll.js" type="text/javascript"></script>
-  <script src="js/main.js" type="text/javascript"></script>
-<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/bodymovin.js" type="text/javascript"></script>
+    <script src="js/smooth-scroll.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="/path/to/parallax.js"></script> -->
-  <script>
-	   var scroll = new SmoothScroll('a[href*="#"]', {
-       speed: 1000,
-       offset: 0
-     });
-  </script>
-  <!-- <script>
+    <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        offset: 0
+    });
+    </script>
+    <!-- <script>
     var container = document.getElementById('atom');
     var animData = {
         container: container,
@@ -63,6 +76,7 @@
     };
     var anim = bodymovin.loadAnimation(animData);
   </script> -->
-<!--   $('.parallax-window').parallax({imageSrc: '/images/background.jpg'}); -->
+    <!--   $('.parallax-window').parallax({imageSrc: '/images/background.jpg'}); -->
 </body>
+
 </html>
