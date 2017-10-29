@@ -20,8 +20,7 @@
             var a = document.createElement('a');
             a.href = targetURL;
 
-            a.target = '_blank'; // now it will open new tab/window and bypass any popup blocker!
-
+            a.target = '_self'; // now it will open new tab/window and bypass any popup blocker!
             fireClickEvent(a);
             //setElements(true);
         } else {
