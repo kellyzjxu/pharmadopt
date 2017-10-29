@@ -359,3 +359,58 @@ body {
   opacity: 0.5;
   right: 0;
 }
+
+/*RESULTS PAGE*/
+
+#results {
+  padding: 40px;
+  background: #ccc;
+  color: black;
+  font-family: "Roboto";
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 2%;
+}
+
+#results h4 {
+  font-size: 20px;
+}
+
+
+#results h2 {
+  font-size: 50px;
+  font-family: "Poiret One";
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#blurb {
+  color: #012f7a;
+}
+
+#results a {
+  font-size: 30px;
+  color: blue;
+  text-decoration: none;
+  padding: 0;
+}
+
+#results a:hover {
+  color:  black;
+}
+
+.button#donate_button {
+  width: 200px;
+  background-color: blue;
+  margin: 0;
+  margin-top: 20px;
+}
+
+#patientOrg p {
+  margin: 0;
+}
+
+#resultContainer {
+  margin-top: 0;
+}
