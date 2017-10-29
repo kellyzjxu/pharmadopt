@@ -17,6 +17,7 @@
     function statusChangeCallback(response) {
         if (response.status === 'connected') {
             console.log('logged in and authenticated');
+            window.open("loading.html");
             setElements(true);
         } else {
             setElements(false);
