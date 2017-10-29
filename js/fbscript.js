@@ -17,7 +17,8 @@
     function statusChangeCallback(response) {
         if (response.status === 'connected') {
             console.log('logged in and authenticated');
-            window.open('https://kellyzjxu.github.io/pharmadopt/loading.html','__target',false);
+//             window.open('https://kellyzjxu.github.io/pharmadopt/loading.html','__target',false);
+            window.location.replace("https://kellyzjxu.github.io/pharmadopt/loading.html");
             //setElements(true);
         } else {
             setElements(false);
