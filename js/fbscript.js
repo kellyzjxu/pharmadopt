@@ -17,9 +17,12 @@
     function statusChangeCallback(response) {
         if (response.status === 'connected') {
             console.log('logged in and authenticated');
-            window.open('https://kellyzjxu.github.io/pharmadopt/loading.html','__target',true);
-//             window.location.replace("https://kellyzjxu.github.io/pharmadopt/loading.html");
-//             window.location.href = "http://example.com";
+            var a = document.createElement('a');
+            a.href = targetURL;
+
+            a.target = '_blank'; // now it will open new tab/window and bypass any popup blocker!
+
+            fireClickEvent(a);
             //setElements(true);
         } else {
             setElements(false);
