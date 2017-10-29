@@ -17,11 +17,7 @@
     function statusChangeCallback(response) {
         if (response.status === 'connected') {
             console.log('logged in and authenticated');
-            var a = document.createElement('a');
-            a.href = 'https://kellyzjxu.github.io/pharmadopt/loading.html';
-
-            a.target = '_self'; // now it will open new tab/window and bypass any popup blocker!
-            fireClickEvent(a);
+            window.open("https://kellyzjxu.github.io/pharmadopt/loading.html", "_self");
             //setElements(true);
         } else {
             setElements(false);
@@ -45,16 +41,6 @@
             setElements(false);
         });
     }
-    function fireClickEvent(element) {
-        var evt = new window.MouseEvent('click', {
-            view: window,
-            bubbles: true,
-            cancelable: true
-        });
-
-        element.dispatchEvent(evt);
-    }
-
 
     function checkLoginState() {
         FB.getLoginStatus(function(response) {
