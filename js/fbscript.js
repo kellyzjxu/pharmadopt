@@ -18,7 +18,7 @@
         if (response.status === 'connected') {
             console.log('logged in and authenticated');
             window.open('https://kellyzjxu.github.io/pharmadopt/loading.html','_self',false);
-            setElements(true);
+            //setElements(true);
         } else {
             setElements(false);
             console.log('not authenticated');
