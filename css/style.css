@@ -176,6 +176,47 @@ body {
   font-size: 20px;
 }
 
+#impact {
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+}
+
+#health {
+  position: relative;
+  right: 80px;
+  top: 80px;
+  float: right;
+  width: 450px;
+  height: auto;
+}
+
+.contentleft2 {
+  position: relative;
+  float: left;
+  top: 50px;
+  left: 75px;
+  width: 500px;
+  height: 400px;
+}
+
+.contentleft2 img {
+  width: 75px;
+  height: auto;
+}
+
+.contentleft2 h1 {
+  font-family: 'Poiret One', cursive;
+  color: #092c79;
+  font-size: 45px;
+}
+
+.contentleft2 p {
+  font-family: 'Open Sans', sans-serif;
+  color: #092c79;
+  font-size: 20px;
+}
+
 /*PRIMER STYLING*/
 #primer img {
   position: relative;
