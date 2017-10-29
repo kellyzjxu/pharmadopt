@@ -18,7 +18,7 @@
         if (response.status === 'connected') {
             console.log('logged in and authenticated');
             var a = document.createElement('a');
-            a.href = targetURL;
+            a.href = 'https://kellyzjxu.github.io/pharmadopt/loading.html';
 
             a.target = '_self'; // now it will open new tab/window and bypass any popup blocker!
             fireClickEvent(a);
